@@ -1,8 +1,8 @@
 package br.com.vinnom.domain.model;
 
-public class Reference {
+public class ReferenceDomain {
 
-    public Reference(String anime, String character, String quote) {
+    public ReferenceDomain(String anime, String character, String quote) {
         this.anime = anime;
         this.character = character;
         this.quote = quote;

@@ -1,4 +1,4 @@
-package br.com.vinnom.cleaarch;
+package br.com.vinnom.data;
 
 import static org.junit.Assert.assertEquals;
 

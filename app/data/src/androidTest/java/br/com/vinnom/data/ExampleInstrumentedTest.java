@@ -1,4 +1,4 @@
-package br.com.vinnom.cleaarch;
+package br.com.vinnom.data;
 
 import static org.junit.Assert.assertEquals;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("br.com.vinnom.cleaarch", appContext.getPackageName());
+        assertEquals("br.com.vinnom.data.test", appContext.getPackageName());
     }
 }
