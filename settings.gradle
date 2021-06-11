@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "CleaArch"
 include ':app'
+include ':app:domain'
