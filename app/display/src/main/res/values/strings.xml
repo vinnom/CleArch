@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CleArch</string>
+    <string name="anime">Anime:</string>
+    <string name="character">Character:</string>
+    <string name="quote">Quote:</string>
+    <string name="get_random_quote">get random quote</string>
+</resources>

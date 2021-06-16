@@ -2,15 +2,14 @@ package br.com.vinnom.domain.model;
 
 public class ReferenceDomain {
 
+    private String anime;
+    private String character;
+    private String quote;
     public ReferenceDomain(String anime, String character, String quote) {
         this.anime = anime;
         this.character = character;
         this.quote = quote;
     }
-
-    private String anime;
-    private String character;
-    private String quote;
 
     public String getAnime() {
         return anime;

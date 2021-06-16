@@ -6,6 +6,6 @@ import retrofit2.http.GET;
 
 public interface ReferenceDataService {
 
-    @GET("/random")
+    @GET("random")
     Call<ReferenceData> getReferenceDataRandom();
 }

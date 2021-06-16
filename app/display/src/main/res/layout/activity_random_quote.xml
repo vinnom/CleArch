@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RandomQuoteActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/randomQuote_animeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:text="@string/anime"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/randomQuote_animeTextView_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/randomQuote_animeTextView_text"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@id/randomQuote_animeTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Anime Text" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/randomQuote_characterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="@string/character"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/randomQuote_characterTextView_text"
+        app:layout_constraintStart_toStartOf="@+id/randomQuote_animeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/randomQuote_animeTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/randomQuote_characterTextView_text"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@+id/randomQuote_characterTextView"
+        app:layout_constraintTop_toBottomOf="@+id/randomQuote_animeTextView_text"
+        tools:text="Character Text" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/randomQuote_quoteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="@string/quote"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/randomQuote_quoteTextView_text"
+        app:layout_constraintStart_toStartOf="@+id/randomQuote_characterTextView"
+        app:layout_constraintTop_toBottomOf="@+id/randomQuote_characterTextView"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/randomQuote_quoteTextView_text"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:padding="2dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/randomQuote_quoteTextView"
+        app:layout_constraintTop_toBottomOf="@+id/randomQuote_characterTextView_text"
+        tools:text="Quote Text" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/randomQuote_getRandomQuote_buttom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/get_random_quote"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

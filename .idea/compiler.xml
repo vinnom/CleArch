@@ -4,6 +4,7 @@
     <bytecodeTargetLevel target="1.8">
       <module name="CleaArch.app" target="11" />
       <module name="CleaArch.app.data" target="11" />
+      <module name="CleaArch.app.display" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
