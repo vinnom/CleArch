@@ -16,7 +16,7 @@ public class RandomQuoteViewModel extends ViewModel {
         this.repository = repository;
     }
 
-    public LiveData<ReferenceDomain> getReferenceRandom() throws IOException {
+    public LiveData<ReferenceDomain> getReferenceRandom() {
         return repository.getDomainLiveData();
     }
 }

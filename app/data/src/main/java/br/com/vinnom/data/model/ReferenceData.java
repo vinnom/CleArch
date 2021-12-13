@@ -10,20 +10,20 @@ public class ReferenceData {
         return anime;
     }
 
-    public void setAnime(String anime) {
-        this.anime = anime;
-    }
-
     public String getCharacter() {
         return character;
     }
 
-    public void setCharacter(String character) {
-        this.character = character;
-    }
-
     public String getQuote() {
         return quote;
+    }
+
+    public void setAnime(String anime) {
+        this.anime = anime;
+    }
+
+    public void setCharacter(String character) {
+        this.character = character;
     }
 
     public void setQuote(String quote) {

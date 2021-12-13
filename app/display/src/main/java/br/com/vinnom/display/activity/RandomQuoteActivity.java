@@ -48,17 +48,14 @@ public class RandomQuoteActivity extends AppCompatActivity {
                 quoteTextView.setText(null);
             }
 
-            try {
-                viewModel.getReferenceRandom().observe(this, referenceDomain -> {
-                    if (referenceDomain != null){
-                        animeTextView.setText(referenceDomain.getAnime());
-                        characterTextView.setText(referenceDomain.getCharacter());
-                        quoteTextView.setText(referenceDomain.getQuote());
-                    }
-                });
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+
+            viewModel.getReferenceRandom().observe(this, referenceDomain -> {
+                if (referenceDomain != null){
+                    animeTextView.setText(referenceDomain.getAnime());
+                    characterTextView.setText(referenceDomain.getCharacter());
+                    quoteTextView.setText(referenceDomain.getQuote());
+                }
+            });
         });
     }
 

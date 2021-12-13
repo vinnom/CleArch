@@ -6,8 +6,6 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import java.io.IOException;
-
 import br.com.vinnom.data.config.RetrofitImpl;
 import br.com.vinnom.data.mapper.ReferenceMapper;
 import br.com.vinnom.data.model.ReferenceData;
@@ -39,16 +37,15 @@ public class ReferenceDomainRepositoryImpl implements ReferenceDomainRepository 
         });
     }
 
-    public LiveData<ReferenceDomain> getDomainLiveData() throws IOException {
+    public LiveData<ReferenceDomain> getDomainLiveData() {
         this.getReferenceRandom();
         return domainLiveData;
     }
 
     @Override
-    public ReferenceDomain getReferenceRandom() {
+    public void getReferenceRandom() {
         this.getReferenceDataRandom(data ->
                 domainLiveData.setValue(new ReferenceMapper().fromReferenceDataToDomain(data)));
-        return null;
     }
 
     interface RespositoryListener {
